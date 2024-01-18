@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 100%;
     height: auto;
     background: transparent url('../multimedia/Page1/background-header@2x.png') no-repeat;
     background-size: 100% 100%;
@@ -64,6 +64,7 @@ a {
     color: #FFFFFF;
     opacity: 1;
 }
+.label1,
 .label2,
 .label3,
 .label4 {
@@ -72,7 +73,14 @@ a {
     color: #FFFFFF;
     opacity: 1;
 }
-
+.label1{
+    display: flex;
+    width: 785px !important;
+    margin-top: -30px !important;
+    height: 17px !important;
+    text-align: left !important;
+    font: normal normal 300 14px/17px Lato;
+}
 .label2 {
     font: normal normal 300 16px/19px Lato;
 }
@@ -102,6 +110,24 @@ form{
     height: 1381px;
     background-color: #0A0B0D;
     border-radius: 20px;
+}
+form .btn {
+    background-color: #311FA6;
+    margin-left: 271px;
+    width: 210px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+    font: normal normal bold 1.2rem Roboto;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    border: none;
+    border-radius: 50px;
+    transition: .5s ease-in;
+}
+form .btn:hover{
+    background-color: #4d3db9;
 }
 form .SelectBox{
     display: flex;
@@ -146,8 +172,30 @@ textarea{
     overflow: hidden;
     resize: none;
 }
-.TextT{
-    height: 217px !important;
+.upImg1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 239px;
+    height: 154px;
+    background-color: #3F5173;
+    border-radius: 10px;
+}
+
+.upImg2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 154px;
+    height: 154px;
+    background-color: #3F5173;
+    border-radius: 10px;
+}
+.imgs{
+    display: flex;
+    gap: 20px;
+    width: 100% !important;
+    padding-left: 271px;
 }
 .opcion{
     display: flex;
@@ -186,9 +234,11 @@ textarea{
 }
 .Entrada{
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     gap: 16px;
     width: 100%;
-    height: 40px;
+    height: fit-content !important;
 }
 .Entrada label{
     display: flex;
@@ -198,6 +248,9 @@ textarea{
     color: #BFBFBF;
     height: 40px;
 }
+.TextT{
+    height: 264px !important;
+}
 .Text{
     margin-top: 41px;
     display: flex;
@@ -206,7 +259,29 @@ textarea{
     width: 60%;
     margin-bottom: 34px;
 }
-
+.upload{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+    background-color: #283040;
+    border: 1px solid #E3E3E3;
+    width: fit-content !important;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: .5s ease-in;
+    gap: 12px;
+    text-decoration: none;
+}
+.upload label{
+    width: fit-content !important;
+}
+.upload i{
+    filter: invert(40%);
+}
 .Seccion3 {
     display: flex;
     flex-direction: row;

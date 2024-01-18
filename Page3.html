@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/Page3.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Lista de juegos</title>
 </head>
 <body>
@@ -69,31 +70,49 @@
             <div class="Entrada TextT">
                 <label class="label2" for="">Historia Impactante:</label>
                 <textarea for="" class="label2">Describe brevemente la trama cautivadora de tu juego. Por ejemplo: Embárcate en una odisea emocionante donde cada elección cuenta. Descubre una trama llena de misterios y decisiones impactantes que darán forma al destino de tu personaje</textarea>
+                <label for="" class="label1">0/500 caracteres</label>
             </div>
             <!-- 5 -->
             <div class="Entrada">
                 <label class="label2" for="">Imagen principal:</label>
-                <div class="SelectBox">
-                    <div class="select" id="select">
-                        <div class="contenido-select">
-                            <label for="" class="label2">Carga Imagen principal de tu juego</label>
-                        </div>
-                        <img src="./multimedia/Page1/angle-down-solid.svg" alt="">
+                <button class="upload">
+                    <label for="" class="label2">Carga Imagen principal de tu juego</label>
+                    <i class="Small material-icons">file_upload</i>
+                </button>
+                <div class="imgs">   
+                    <div class="upImg1">
+                        <i class="large material-icons">image</i>
                     </div>
                 </div>
             </div>
             <!-- 6 -->
             <div class="Entrada">
-                <label class="label2" for="">Plataformas Disponibles:</label>
-                <div class="SelectBox">
-                    <div class="select" id="select">
-                        <div class="contenido-select">
-                            <label for="" class="label2">Selecciona la plataforma disponible para de tu juego</label>
-                        </div>
-                        <img src="./multimedia/Page1/angle-down-solid.svg" alt="">
+                <label class="label2" for="">Capturas de Pantalla:</label>
+                <button class="upload">
+                    <label for="" class="label2">Carga 3 capturas de pantalla de tu juego</label>
+                    <i class="Small material-icons">file_upload</i>
+                </button>
+                <div class="imgs">   
+                    <div class="upImg2">
+                        <i class="large material-icons">image</i>
+                    </div> 
+                    <div class="upImg2">
+                        <i class="large material-icons">image</i>
+                    </div> 
+                    <div class="upImg2">
+                        <i class="large material-icons">image</i>
                     </div>
                 </div>
             </div>
+            <!-- 7 -->
+            <div class="Entrada TextT">
+                <label class="label2" for="">Requisitos del Sistema:</label>
+                <textarea for="" class="label2">En caso de ser un juego de PC, incluye los requisitos mínimos y recomendados para que los jugadores puedan verificar la compatibilidad con sus sistemas.</textarea>
+                <label for="" class="label1">0/500 caracteres</label>
+            </div>
+            <!-- 8 -->
+
+            <button class="btn">Agregar a mi lista</button>
         </form>
     </div>
     <div class="Seccion3">
